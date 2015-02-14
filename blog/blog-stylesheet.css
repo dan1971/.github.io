@@ -1,0 +1,49 @@
+body {
+	background-color: #131313;
+}
+
+h1 {
+	color: #ffffff;
+}
+
+p {
+	font-family: verdana;
+	font-size: 14;
+	color: #ffffff;
+}
+#top{
+	width: 100%;
+	height: 120px;
+	background-color: #000000;
+
+}
+section {
+	color: #ffffff;
+}
+
+h1 {
+	color: #919191;
+	font-family: arial;
+	font-size: 30px;
+}
+
+a:link {
+	color: #c4952e;
+}
+#contact {
+	font-family: verdana;
+	color: #848484;
+	font-size: 12px;
+}
+
+#table_top {
+	padding: 5px;
+	width: 100%
+}
+#blogs {
+	width: 50%;
+}
+
+hr {
+	color: #919191;
+}
