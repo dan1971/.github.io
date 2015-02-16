@@ -1,0 +1,41 @@
+body{
+
+	background-color: #000000;
+}
+a:link {
+	color: #ffffff;
+}
+a:visited {
+	color: #8d8d8d;
+}
+#links {
+	color: #d4a133;
+	font-family: verdana;
+	font-size: 12px;
+	position: relative;
+	margin-left: 10px;
+	width: 250px;
+	height: 90px;
+}
+
+#table_container {
+	background-color: #0f0f0f;
+	margin-top: 150px;
+	width: 100%;
+
+}
+#table_logo_contact {
+	margin-left: 150px;
+	width: 50%;
+}
+
+#test {
+	font-family: verdana;
+	color: #ffffff;
+}
+h3 {
+	display: inline;
+	color: #878787;
+	font-family: verdana;
+	font-size: 14px;
+}
