@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dan Rollans Blogs</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
+</head>
+
+<body>
+<main>
+<header>
+<div id="top">
+  <table id="table_top"><tr><td>
+  <img src="../imgs/DR_logo.jpg"></td>
+  <td style="vertical-align: bottom ; text-align: right ;">
+ <p id="contact">
+ | Daniel Rollans / 949-355-3919 / <a href="#">danrollans.com</a> |
+
+  </p>
+
+
+  </td></tr></table>
+</div>
+</header>
+  <h1>Blog Posts</h1>
+  <section>
+
+<hr />
+
+<h3>
+    2/27/2015 - Using Enumerables - 'Map'
+  </h3>
+
+  <table id="blogs"><tr><td>
+   <p>
+    Enumerables, one of the workhorses of the Ruby language when it comes to looking through a collection of data, such as an array, and doing something with one or more pieces of that data. 
+  </p>
+  <p>
+    I will show an example and explain the 'Map' Method and how it works:
+
+  <br /><br />
+
+  <code>
+
+    an_array = ["dog","cat","fish","bird"] 
+
+    <br />
+
+    an_array.map { |x| x << " pet" }
+
+  </code>
+
+  <br /><br />
+
+  First we see an array called an_array with animals in it. 
+
+  <br />
+
+  Next is the map method being called on the array. 
+
+  <br />
+
+  Inside the 'block', left to right, first we see an x. This 'x' is simply a variable and can be any letter; i , y , g whatever. This variable is used to represent each item in the array as the map method loops through the array per the number of items in the array. 
+
+  <br /><br />
+
+  So for each run (loop), 'x' represents an array item to which an equation is applied. 
+
+  <br />
+
+  The 'equation', which we can see above, comes after the '|x|'. In this case, the equation says "add the word 'pet' to the current item represented by 'x' in the array".
+
+  <br /><br />
+
+  There are many 'equations' we can apply to the variable in addition to the one shown above.
+
+  </p>
+
+
+
+
+<br /><br />
+
+   </td></tr></table>
+  </section>
+</main>
+
+</body>
+</html>
