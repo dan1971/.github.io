@@ -16,6 +16,10 @@ p {
 section {
 	color: #ffffff;
 }
+code {
+
+	color: #f98e02;
+}
 
 h1 {
 	color: #919191;
@@ -23,7 +27,7 @@ h1 {
 	font-size: 30px;
 }
 h3 {
-	color: #919191;
+	color: #d4a133;
 	font-family: arial;
 	font-size: 18px;
 }
