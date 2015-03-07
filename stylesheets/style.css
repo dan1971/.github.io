@@ -18,9 +18,18 @@ a:visited {
 	height: 90px;
 }
 
+#table_all {
+	align: top;
+	margin-top: 20px;
+	background-image: url(../imgs/bg.jpg);
+	width: 1271px;
+	height: 900px
+}
+
 #table_container {
-	background-color: #0f0f0f;
-	margin-top: 150px;
+	
+	 background-color: #0f0f0f;
+	margin-top: 190px;
 	width: 100%;
 
 }
