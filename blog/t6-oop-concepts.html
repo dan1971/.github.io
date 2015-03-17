@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dan Rollans Blogs</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
+</head>
+
+<body>
+<main>
+<header>
+<div id="top">
+  <table id="table_top"><tr><td>
+  <img src="../imgs/DR_logo.jpg"></td>
+  <td style="vertical-align: bottom ; text-align: right ;">
+ <p id="contact">
+
+ | Daniel Rollans / 949-355-3919 / <a href="#">danrollans.com</a> |
+
+  </p>
+  </td></tr></table>
+</div>
+</header>
+  <h1>Blog Posts</h1>
+  <section>
+
+<hr />
+
+<h3>
+   ++ 3/17/05 Classes and Modules- Friend or foe or...what the H are they? 
+  </h3>
+
+  <table id="blogs"><tr><td>
+   <p>
+  In this blog I will compare and explain classes and modules and what they are used for. 
+  </p>
+  </p>
+<p> 
+  
+</p>
+<h3>
+
+Classes
+
+</h3>
+<p>
+
+One of the key aspects in any programming is the idea of eliminating redundancy; finding repetitive code and finding a way to boil is all down to one logic train. This where classes come in.
+
+<br/ ><br />
+
+A Class is an object like any object in the physical world; it has named attributes and actions it is capable of. These named attributes and actions are created by the programmer. These attributes are also non-specific in that we can create a copy of the class and at that time send in specific details like names, numbers, etc. 
+
+<br /><br />
+
+In this way a class eliminates repeating code as the class attributes are generic and the specifics are passed in at runtime per creation of a NEW copy of the class object.
+
+
+</p>
+<p>
+Generic object construct:
+
+<br />
+
+ <code>
+
+ class Person <br />
+
+    &nbsp;&nbsp;def initialize(persons_name,hair_color) 
+
+    <br />
+
+    &nbsp;&nbsp;&nbsp;@person = persons_name
+
+    <br />
+
+    &nbsp;&nbsp;&nbsp;@hair_color = hair_color
+
+    <br />
+
+    &nbsp;&nbsp;end
+
+    <br />
+
+ end
+
+ <br />
+ <br />
+ </code>
+
+The class object is duplicated with specifics added:
+
+<code>
+
+<br />
+ a_person = Person.new("Bill","black")
+
+ </code>
+
+<br /><br />
+
+</p>
+<h3>
+
+Modules
+
+</h3>
+<p>
+
+Modules are similar to Classes in that they are generic encapsulations of functionality including methods and constants. Where they are different is you do not create new 'instances' of them. The Module is defined and then can be called or 'included' in a Class. 
+
+<br/ ><br />
+
+It is similar to Class inheritance except a Class can add more than one Module where Class inheritance can only inherit from one Class. Once the Module is called into the Class all the Modules methods, contants, etc can be used by the Class as if they were part of the Class.
+
+<br/ ><br />
+
+Shown below is an example of the Module structure and how the Class calls it and uses its methods.
+
+</p>
+<p>
+Generic Module construct:
+
+<br />
+
+ <code>
+
+ module TryThisOut<br />
+	 &nbsp;&nbsp; &nbsp;&nbsp;def do_math(number1,number2)<br />
+	 &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;number1 + number2<br />
+	 &nbsp;&nbsp; &nbsp;&nbsp;end<br />
+end
+
+</code>
+<br/> <br />
+
+Generic Class construct which calls the Module into the Class:
+
+<br />
+<code>
+
+class Mod_test<br/ >
+	&nbsp;&nbsp;include TryThisOut<br/ >
+end
+
+</code>
+<br/ ><br/ >
+
+Now Create a new Class object and call the method the Module contained:
+
+<br/ >
+<code>
+
+tester = Mod_test.new<br/ >
+p tester.do_math(6,4)<br/ >
+
+ </code>
+
+
+<br /><br />
+
+   </td></tr></table>
+  </section>
+</main>
+
+</body>
+</html>
