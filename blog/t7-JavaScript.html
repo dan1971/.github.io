@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dan Rollans Blogs</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
+</head>
+
+<body>
+<main>
+<header>
+<div id="top">
+  <table id="table_top"><tr><td>
+  <img src="../imgs/DR_logo.jpg"></td>
+  <td style="vertical-align: bottom ; text-align: right ;">
+ <p id="contact">
+
+ | Daniel Rollans / 949-355-3919 / <a href="#">danrollans.com</a> |
+
+  </p>
+  </td></tr></table>
+</div>
+</header>
+  <h1>Blog Posts</h1>
+  <section>
+
+<hr />
+
+<h3>
+   ++ Comparing Ruby classes & JavaScript constructor functions
+  </h3>
+
+  <table id="blogs"><tr><td>
+   <p>
+  Ruby Classes and Javascript constructors are objects we use in order to avoid redundancy in the code. ie. Repeating code over and over. Both are generic objects that contain generic properties, variables and methods/functions. In both  we can create new instances of the objects and then assign the newly created objects specific properties like 'color' or numbers to do math to.
+  </p>
+
+<p> 
+  
+  The differences are mostly syntactical and how the object is constructed. One big difference is the things the objects can 'do' are called 'Methods' in Ruby and 'Functions' in Javascript. I show the two styles below.
+
+</p>
+<p>
+Ruby Class construct and new object:
+
+<br /><br />
+
+ <code>
+ Class Box <br /><br />
+
+ 	&nbsp;&nbsp;def initialize(argument1, argument2)<br />
+ 		&nbsp;&nbsp;&nbsp;@variable_1 = argument1<br />
+ 		&nbsp;&nbsp;&nbsp;@variable_2 = argument2<br />
+ 	&nbsp;&nbsp;end<br /><br />
+
+// now add a method which is something this object can 'do':<br/ ><br/ >
+ 	&nbsp;&nbsp;def add_arguments<br />
+ 		&nbsp;&nbsp;&nbsp;@sum = @variable_1 + @variable_2<br />
+ 	&nbsp;&nbsp;end<br /><br />
+end
+
+<br /><br />
+
+make_a_box = Box.new(4,5)<br />
+make_a_box.add_arguments<br />
+
+ 
+ </code>
+
+<br /><br />
+
+Javascript object prototype construct and new object creation:
+
+<br /><br />
+
+ <code>
+ function Box(shape){<br /><br />
+
+ 	&nbsp;&nbsp;this.shape = shape;<br />
+
+ }
+<br /><br />
+// now add a function which is something this object can 'do':<br/ ><br/ >
+
+Box.prototype.tell_us_your_shape = function(){<br/ >
+	&nbsp;&nbsp;return this.shape;<br/ >
+}
+
+<br/ ><br/ >
+var blueBox = new Box("cube");<br/ >
+blueBox.tell_us_your_shape();
+
+ 
+ </code>
+</p>
+
+<br /><br />
+
+   </td></tr></table>
+  </section>
+</main>
+
+</body>
+</html>
