@@ -25,7 +25,6 @@
   <section>
 
 <hr />
-<?php echo '<p>Hello World</p>'; ?> 
 <h3>
    ++ What is Active Record and why it's awesome!
   </h3>
